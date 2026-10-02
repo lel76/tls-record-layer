@@ -1,6 +1,6 @@
 {
   "name": "tls-record-layer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Parses and constructs TLS 1.2 and 1.3 record headers and zero-rtt early data indicators.",
   "type": "module",
   "main": "src/index.js",
