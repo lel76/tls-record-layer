@@ -53,3 +53,10 @@ The trade-off: by staying at the record layer we avoid pulling in a full TLS sta
 ```
 node --test
 ```
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
